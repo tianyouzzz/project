@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="./jquery.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="header">
+            <div class="platform"> <span>BUG汇总平台</span> <br>
+                <button type="button" name="new">新增</button>
+                <button type="button" name="find">查找</button>
+            <!--还有什么其他切换方式-->
+            </div>
+        </div>
+            <br>
+            <div class="content">
+            <form action="/example/html/form_action.asp" method="get">
+                编号：<input type="number" name="selNumber" >
+            </form>
+            <form>
+                <input type="radio" name="type" value="type1" /> BUG
+                <input type="radio" name="type" value="type2" />优化
+                <input type="radio" name="type" value="type3" />任务
+            </form>
+            <form>
+                <input type="radio" name="priority" value="priority1" />正常
+                <input type="radio" name="priority" value="priority2" />高
+                <input type="radio" name="priority" value="priority3" />低
+            </form>
+        </div>
+        <div class="describe">
+            <p>问题简述：</p>
+        <textarea name="prolemDscribe1">
+            </textarea>
+            <p>详细描述：</p>
+        <textarea name="prolemDscribe2">
+            </textarea>
+        <br>
+
+        <!--<script type="text/javascript">-->
+            <!--var myDate = new Date();-->
+            <!--document.write(myDate.toLocaleString())-->
+        <!--</script>-->
+
+                <p>如何自动获取提交时间</p>
+        <form>
+            <input type="submit" value="提交" />
+        </form>
+        </div>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
+        <!--<script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
