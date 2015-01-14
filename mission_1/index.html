@@ -26,6 +26,12 @@
             <div class="platform"> <span>BUG汇总平台</span> <br>
                 <button type="button" name="new">新增</button>
                 <button type="button" name="find">查找</button>
+                <ul>
+                    <li><a href="index.html">开发中</a> </li>
+                    <li><a href="index.html">开发完成</a></li>
+                    <li><a href="index.html">解决</a></li>
+                    <li><a href="index.html">拖延</a></li>
+                </ul>
             <!--还有什么其他切换方式-->
             </div>
         </div>
@@ -58,11 +64,21 @@
             <!--var myDate = new Date();-->
             <!--document.write(myDate.toLocaleString())-->
         <!--</script>-->
+        <script>
+            function displayDate()
+                {
+                    document.getElementById("demo").innerHTML=Date();
+                }
+        </script>
+        <button type="button" onclick="displayDate()">显示日期</button>
 
-                <p>如何自动获取提交时间</p>
+            <p  id="demo">如何自动获取提交时间</p>
         <form>
             <input type="submit" value="提交" />
         </form>
+            <a name="foot">这里是FOOT部分</a>
+            <a href="#foot">点击我链接到FOOT</a>
+
         </div>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->

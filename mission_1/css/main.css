@@ -19,7 +19,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 22px;
     line-height: 1.4;
 }
 .platform{
@@ -28,18 +28,57 @@ html {
     width: 100%;
 }
 .platform span{
-    margin-left: 50px;
+
 }
 .platform button{
-    margin-left: 35px;
+
 }
 .content form{
-    margin-left: 30px;
+
 }
 .describe{
-    margin-left: 30px;
-}
 
+}
+.body-style {
+    TEXT-ALIGN: center;
+    /*background:url("./../img/background1.jpg") ;*/
+    /*background-color:lightgreen;*/
+}
+#center {
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+li{
+    display: inline;
+
+}
+textarea{
+    width: 300px;
+    height:85px;
+}
+a:link,a:visited
+{
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#bebebe;
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    /*text-transform:uppercase;*/
+    display: inline;
+
+}
+a:hover,a:active
+{
+    background-color:#cc0000;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
